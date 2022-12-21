@@ -8,6 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		//git test comment
 		Scanner scan = new Scanner(System.in).useDelimiter("\n");
 		Scanner scan1 = new Scanner(System.in);
 		ArrayList<Department> depList = new ArrayList<>();

@@ -12,9 +12,9 @@ public class Main {
 		Scanner scan = new Scanner(System.in).useDelimiter("\n");
 		Scanner scan1 = new Scanner(System.in);
 		ArrayList<Department> depList = new ArrayList<>();
-
+		System.out.println("\n🏫🏫🏫🏫🏫🏫🏫🏫 Welcome to Our School System 🏫🏫🏫🏫🏫🏫🏫🏫");
 		School schoolObj = new School();
-		System.out.println("Enter School Name:");
+		System.out.println("\nEnter School Name:");
 		schoolObj.setschoolName(scan.next());
 		System.out.println("Enter School Type:");
 		schoolObj.setschoolType(scan.next());
@@ -74,6 +74,7 @@ public class Main {
 			System.out.println("Enter English Language Marks:");
 			courseobj.mark.setenglishMark(scan1.nextInt());
 			
+		
 			
 			/////////Adding Course to arrayList //////////
 			studobj.corsList.add(courseobj);
@@ -108,7 +109,7 @@ public class Main {
 				} 
 			}
 	
-		System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
+		System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
 		System.out.println("\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣ School Details ≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣");
 		System.out.println("\n⫸⫸⫸ School Name : " + schoolObj.getschoolName());
 		System.out.println("\n⫸⫸⫸ School Type : " + schoolObj.getschoolType());
@@ -142,7 +143,7 @@ public class Main {
 						System.out.println("\n⫸⫸⫸ Mathimatic Marks : " + cors1.mark.getmathMark());
 						System.out.println("\n⫸⫸⫸ Infomation Technology Marks : " + cors1.mark.getitMark());
 						System.out.println("\n⫸⫸⫸ English Language Marks : " + cors1.mark.getenglishMark());
-						System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
+						System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
 
 					}
 				}

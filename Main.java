@@ -12,7 +12,7 @@ public class Main {
 		Scanner scan = new Scanner(System.in).useDelimiter("\n");
 		Scanner scan1 = new Scanner(System.in);
 		ArrayList<Department> depList = new ArrayList<>();
-		System.out.println("\n🏫🏫🏫🏫🏫🏫🏫🏫 Welcome to Our School System 🏫🏫🏫🏫🏫🏫🏫🏫");
+		System.out.println("\n🏫🏫🏫🏫🏫🏫🏫🏫👉 Welcome to Our School System 👈🏫🏫🏫🏫🏫🏫🏫🏫");
 		School schoolObj = new School();
 		System.out.println("\nEnter School Name:");
 		schoolObj.setschoolName(scan.next());
@@ -21,10 +21,10 @@ public class Main {
 		System.out.println("Enter School Address:");
 		schoolObj.setschoolAddress(scan.next());
 				
-		Boolean deptFlag = true;                 ////Condition of the 1st while loop(Department)
-		Boolean teacherFlag = true;				 ////Condition of the 2nd while loop(Teacher)
-		Boolean studentFlag = true;				 ////Condition of the 3rd while loop(Student)
-		Boolean coursetFlag = true;				 ////Condition of the 4th while loop(Course)
+		Boolean deptFlag = true;              ////Condition of the 1st while loop(Department)
+		Boolean teacherFlag = true;			  ////Condition of the 2nd while loop(Teacher)
+		Boolean studentFlag = true;			  ////Condition of the 3rd while loop(Student)
+		Boolean coursetFlag = true;			  ////Condition of the 4th while loop(Course)
 		
 		
 		while (deptFlag) { 

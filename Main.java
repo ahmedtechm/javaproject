@@ -147,7 +147,7 @@ public class Main {
 					}
 				}
 			}
-			System.out.println(" End of the program, Thank you!");
+			System.out.println(" program completed , Thank you!");
 		}
 	}
 }

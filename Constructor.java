@@ -16,7 +16,7 @@ public class Constructor {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		
+		// call the constructor
 		Constructor myobj = new Constructor("Ahmed" , "ALAbri",26);
 		System.out.println(myobj.studentName + "\n" + myobj.familyName+"\n "+myobj.studentAge);
 

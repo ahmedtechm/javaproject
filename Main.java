@@ -121,21 +121,18 @@ public class Main {
 			System.out.println("\n⫸⫸⫸ Department Floor : " + dep1.getnoOfFloors());
 
 			for (Teacher teach1 : dep1.teacherList) {
-
 				System.out.println("\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣ Teacher Details ≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣");
 				System.out.println("\n⫸⫸⫸ Teacher Name : " + teach1.getteacherName());
 				System.out.println("\n⫸⫸⫸ Teacher ID : " + teach1.teacherId());
 				System.out.println("\n⫸⫸⫸ Teacher Email : " + teach1.getteacherEmail());
 
 				for (Student stud1 : teach1.studList) {
-
 					System.out.println("\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣ Student Details ≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣");
 					System.out.println("\n⫸⫸⫸ Student Name : " + stud1.getstudentName());
 					System.out.println("\n⫸⫸⫸ Student ID : " + stud1.studentId());
 					System.out.println("\n⫸⫸⫸ Student Email : " + stud1.getstudentEmail());
 
 					for (Course cors1 : stud1.corsList) {
-
 						System.out.println("\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣ Course Details ≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣");
 						System.out.println("\n⫸⫸⫸ Course ID : " + cors1.getcourseId());
 						System.out.println("\n⫸⫸⫸ Course Name : " + cors1.getcourseName());

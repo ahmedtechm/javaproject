@@ -1,6 +1,7 @@
 package school;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Teacher {
 	
@@ -8,11 +9,27 @@ public class Teacher {
 	private int teacherId;
 	private String teacherEmail;
 	
+	Scanner scan = new Scanner(System.in).useDelimiter("\n");
+	Scanner scan1 = new Scanner(System.in);
+	
 	ArrayList<Student> studList = new ArrayList<Student>();
+	
+	Teacher() {
+		System.out.println("Please Enter Teacher Name:");
+		setteacherName(scan.next());
+		System.out.println("Please Enter Teacher ID:");
+		setteacherId(scan1.nextInt());
+		System.out.println("Please Enter Teacher Email:");
+		setteacherEmail(scan.next());
+		
+		
+		
+	}
+		
 
 	
 
-Student studobj = new Student ();
+//Student studobj = new Student ();
 	
 	
 	
@@ -23,7 +40,7 @@ Student studobj = new Student ();
 	public void setteacherName(String teacherName) {
 	    this.teacherName = teacherName;
 	  }
-	     /*===========done=============*/
+	    
 	public int teacherId() {
 		    return teacherId;
 		  }
@@ -32,7 +49,7 @@ Student studobj = new Student ();
 		    this.teacherId = teacherId;
 		  }
 	
-	/*===========done=============*/
+	
 	
 
 	public String getteacherEmail() {
@@ -43,7 +60,7 @@ Student studobj = new Student ();
 	    this. teacherEmail =  teacherEmail;
 	  }
 			  
-	  /*===========done=============*/
+	 
 	
 
 

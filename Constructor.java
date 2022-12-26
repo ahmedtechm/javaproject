@@ -11,6 +11,7 @@ public class Constructor {
 	    studentName = name;
 	    familyName = fname;
 	    studentAge = age;
+	  
 	  }
 	
 	public static void main(String[] args) {

@@ -21,7 +21,7 @@ public class School {
 	public void setschoolName(String schoolName) {
 	    this.schoolName = schoolName;
 	  }
-	     /*===========done=============*/
+	     
 	public String getschoolType() {
 		    return schoolType;
 		  }
@@ -29,7 +29,7 @@ public class School {
 	public void setschoolType(String schoolType) {
 		    this.schoolType = schoolType;
 		  }
-		  /*===========done=============*/ 
+		 
 	public String getschoolAddress() {
 			    return schoolAddress;
 			  }

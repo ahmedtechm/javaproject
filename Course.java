@@ -2,6 +2,7 @@ package school;
 
 import java.util.Scanner;
 
+
 public class Course {
 	
 	private int courseId;
@@ -10,34 +11,37 @@ public class Course {
 	Scanner scan = new Scanner(System.in).useDelimiter("\n");
 	Scanner scan1 = new Scanner(System.in);
 	
+	//Stack <String> inputtStack = new Stack<>();
+	//Stack <Integer> inputtStak = new Stack<>();
+	
 	
 	
 	Mark mark = new Mark();
 	
-	Course(){
+	//This is a Constructor of Course
+	/*Course(){
 		System.out.println("Please Enter Course ID:");
 		setcourseId(scan1.nextInt());
+		inputtStak.push(courseId);
 		System.out.println("Please Enter Course Name:");
-		setcourseName(scan.next());
-		
-		
-	}
+		setcourseName(scan.next());	
+		}*/
+	
 	
 	public int getcourseId() {
 	    return courseId;
-	  }
-
+	    }
 	public void setcourseId(int courseId) {
 	    this.courseId = courseId;
-	  }
-	     /*===========done=============*/
+	  	}
+	    
+	
+	
 	public String getcourseName() {
 		    return courseName;
-		  }
-
+			}
 	public void setcourseName(String courseName) {
 		    this.courseName = courseName;
-		  }
-		  /*===========done=============*/ 
+		  	}
 
 }

@@ -3,6 +3,7 @@ package school;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class School {
 
 	private String schoolName;
@@ -15,15 +16,20 @@ public class School {
 
 	ArrayList<Department> depList = new ArrayList<Department>();
 	
-	School (){
+	//Stack <String> inputtStack = new Stack<>();
+	
+	//This is a Constructor of School
+	/*School (){
 		System.out.println("\nPlease Enter School Name:");
 		setschoolName(scan.next());
+		inputtStack.push(schoolName);
 		System.out.println("Please Enter School Type:");
 		setschoolType(scan.next());
+		inputtStack.push(schoolType);
 		System.out.println("Please Enter School Address:");
 		setschoolAddress(scan.next());
-
-	}
+		inputtStack.push(schoolAddress);
+	}*/
 
 
 	//Department depObj = new Department();
@@ -52,7 +58,6 @@ public class School {
 			    this.schoolAddress = schoolAddress;
 			  }
 	
-			  /*===========done=============*/
 	
 	
 	

@@ -3,6 +3,7 @@ package school;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class Teacher {
 	
 	private String teacherName;
@@ -13,18 +14,24 @@ public class Teacher {
 	Scanner scan1 = new Scanner(System.in);
 	
 	ArrayList<Student> studList = new ArrayList<Student>();
+	//Stack <String> inputtStack = new Stack<>();
+	//Stack <Integer> inputtStak = new Stack<>();
 	
-	Teacher() {
+	//This is a Constructor of Teacher
+	/*Teacher() { 
 		System.out.println("Please Enter Teacher Name:");
 		setteacherName(scan.next());
+		inputtStack.push(teacherName);
 		System.out.println("Please Enter Teacher ID:");
 		setteacherId(scan1.nextInt());
+		inputtStak.push(teacherId);
 		System.out.println("Please Enter Teacher Email:");
 		setteacherEmail(scan.next());
+		inputtStack.push(teacherEmail);
 		
 		
 		
-	}
+	}*/
 		
 
 	

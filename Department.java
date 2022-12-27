@@ -11,13 +11,19 @@ public class Department {
 	Scanner scan1 = new Scanner(System.in);
 	
 	ArrayList<Teacher> teacherList = new ArrayList<Teacher>();
+	//Stack <String> inputtStack = new Stack<>();
+	//Stack <Integer> inputtStak = new Stack<>();
 	
-	Department(){
+	
+	//This is a Constructor of Department
+	/*Department(){
 		System.out.println("Please Enter Department Name:");
 	    setdepartmentName(scan.next());
+	    inputtStack.push(departmentName);
 		System.out.println("Please Enter Department Floor:");
 		setnoOfFloors(scan1.nextInt());
-	}
+		inputtStak.push(noOfFloors);
+	}*/
 
 	//Teacher teachobj = new Teacher();
 
@@ -29,7 +35,7 @@ public class Department {
 		this.departmentName = departmentName;
 	}
 
-	/* ===========done============= */
+	
 	public int getnoOfFloors() {
 		return noOfFloors;
 	}
@@ -38,6 +44,6 @@ public class Department {
 		this.noOfFloors = noOfFloors;
 	}
 
-	/* ===========done============= */
+
 
 }

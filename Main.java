@@ -1,25 +1,40 @@
 package school;
 
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//git test comment
 		Scanner scan = new Scanner(System.in).useDelimiter("\n");
 		Scanner scan1 = new Scanner(System.in);
+		
 		ArrayList<Department> depList = new ArrayList<>();
+		
+		Stack <String> inputtStack = new Stack<>();
+		
+		
 		System.out.println("\n🏫🏫🏫🏫🏫🏫🏫🏫👉 Welcome to Our School System 👈🏫🏫🏫🏫🏫🏫🏫🏫");
 		School schoolObj = new School();
-		//System.out.println("\nPlease Enter School Name:");
-		//schoolObj.setschoolName(scan.next());
-		//System.out.println("Please Enter School Type:");
-		//schoolObj.setschoolType(scan.next());
-		//System.out.println("Please Enter School Address:");
-		//schoolObj.setschoolAddress(scan.next());
+		
+		System.out.println("\nPlease Enter School Name:");
+		schoolObj.setschoolName(scan.next());
+		inputtStack.push(scan.next());
+		
+		System.out.println("Please Enter School Type:");
+		schoolObj.setschoolType(scan.next());
+		inputtStack.push(scan.next());
+		
+		System.out.println("Please Enter School Address:");
+		schoolObj.setschoolAddress(scan.next());
+		inputtStack.push(scan.next());
 				
 		Boolean deptFlag = true;              ////Condition of the 1st while loop(Department)
 		Boolean teacherFlag = true;			  ////Condition of the 2nd while loop(Teacher)
@@ -30,49 +45,70 @@ public class Main {
 		while (deptFlag) { 
 		///////////////////////Loop for Department///////////////////////////////
 			Department depObj = new Department();
-//			System.out.println("Please Enter Department Name:");
-//			depObj.setdepartmentName(scan.next());
-//			System.out.println("Please Enter Department Floor:");
-//			depObj.setnoOfFloors(scan1.nextInt());
+			System.out.println("Please Enter Department Name:");
+			depObj.setdepartmentName(scan.next());
+			inputtStack.push(scan.next());
+			
+			System.out.println("Please Enter Department Floor:");
+			depObj.setnoOfFloors(scan1.nextInt());
+			inputtStack.push(scan.next());
 			
 			
 			while (teacherFlag) { 		
 		    ///////////////////////Loop for Teacher//////////////////////////////
 			Teacher teachobj = new Teacher();
-			//System.out.println("Please Enter Teacher Name:");
-			//teachobj.setteacherName(scan.next());
-			//System.out.println("Please Enter Teacher ID:");
-			//teachobj.setteacherId(scan1.nextInt());
-			//System.out.println("Please Enter Teacher Email:");
-			//teachobj.setteacherEmail(scan.next());
-				
+			System.out.println("Please Enter Teacher Name:");
+			teachobj.setteacherName(scan.next());
+			inputtStack.push(scan.next());
+			
+			System.out.println("Please Enter Teacher ID:");
+			teachobj.setteacherId(scan1.nextInt());
+			inputtStack.push(scan.next());
+			
+			System.out.println("Please Enter Teacher Email:");
+			teachobj.setteacherEmail(scan.next());
+			inputtStack.push(scan.next());
 			
 			while (studentFlag) { 
 			///////////////////////Loop for Student ///////////////////////////////
 			Student studobj = new Student ();
-			//System.out.println("Please Enter Student Name:");
-			//studobj.setstudentName(scan.next());
-			//System.out.println("Please Enter Student ID:");
-			//studobj.setstudentId(scan1.nextInt());
-			//System.out.println("Please Enter Student Email:");
-			//studobj.setstudentEmail(scan.next());
+			System.out.println("Please Enter Student Name:");
+			studobj.setstudentName(scan.next());
+			inputtStack.push(scan.next());
+			
+			System.out.println("Please Enter Student ID:");
+			studobj.setstudentId(scan1.nextInt());
+			inputtStack.push(scan.next());
+			
+			System.out.println("Please Enter Student Email:");
+			studobj.setstudentEmail(scan.next());
+			inputtStack.push(scan.next());
+			
 
 			
 			while (coursetFlag) {
 			///////////////////////Loop for Course///////////////////////////////
 			Course courseobj = new Course ();
-			//System.out.println("Please Enter Course ID:");
-			//courseobj.setcourseId(scan1.nextInt());
-			//System.out.println("Please Enter Course Name:");
-			//courseobj.setcourseName(scan.next());
-					
-			Mark mark = new Mark(); 
-			//System.out.println("Please Enter Mathimatic Marks:");
-			//courseobj.mark.setmathMark(scan1.nextInt());
-			//System.out.println("Please Enter Information Technology Marks:");
-			//courseobj.mark.setitMark(scan1.nextInt());
-			//System.out.println("Please Enter English Language Marks:");
-			//courseobj.mark.setenglishMark(scan1.nextInt());
+			System.out.println("Please Enter Course ID:");
+			courseobj.setcourseId(scan1.nextInt());
+			inputtStack.push(scan.next());
+			
+			System.out.println("Please Enter Course Name:");
+			courseobj.setcourseName(scan.next());
+			inputtStack.push(scan.next());
+			
+			//Mark mark = new Mark(); 
+			System.out.println("Please Enter Mathematics Marks:");
+			courseobj.mark.setmathMark(scan1.nextInt());
+			inputtStack.push(scan.next());
+			
+			System.out.println("Please Enter Information Technology Marks:");
+			courseobj.mark.setitMark(scan1.nextInt());
+			inputtStack.push(scan.next());
+			
+			System.out.println("Please Enter English Language Marks:");
+			courseobj.mark.setenglishMark(scan1.nextInt());
+			inputtStack.push(scan.next());
 			
 		
 			
@@ -143,10 +179,31 @@ public class Main {
 						System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
 
 					}
+					
 				}
 			}
-			System.out.println(" program completed , Thank you!");
+			System.out.println("\n program completed , Thank you!");
 		}
+		
+		
+		for(String  stackoutput : inputtStack ) {
+			System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
+			System.out.println(stackoutput);
+			
+			
+				File file = new File("C:\\Users\\Lenovo\\eclipse-workspace\\school\\main\\school\\testschool.txt");
+				
+				try {
+					FileWriter fw = new FileWriter(file);
+				  for (String x :inputtStack) {
+					  fw.write(x);	  
+				  }
+				  fw.close();
+				  
+				}catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
 	}
 }
 

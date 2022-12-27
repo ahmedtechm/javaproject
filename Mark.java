@@ -2,6 +2,7 @@ package school;
 
 import java.util.Scanner;
 
+
 public class Mark {
 	
 	private int mathMark;
@@ -11,18 +12,22 @@ public class Mark {
 	Scanner scan = new Scanner(System.in).useDelimiter("\n");
 	Scanner scan1 = new Scanner(System.in);
 	
+	//Stack <Integer> inputtStak = new Stack<>();
 	
 	
-	Mark(){
+	//This is a Constructor of Mark
+	/*Mark(){
 		System.out.println("Please Enter Mathimatic Marks:");
 		setmathMark(scan1.nextInt());
+		inputtStak.push(mathMark);
 		System.out.println("Please Enter Information Technology Marks:");
 		setitMark(scan1.nextInt());
+		inputtStak.push(itMark);
 		System.out.println("Please Enter English Language Marks:");
 		setenglishMark(scan1.nextInt());
+		inputtStak.push(englishMark);
 		
-		
-	}
+	}*/
 	
 	
 	
@@ -33,7 +38,7 @@ public class Mark {
 	public void setmathMark(int mathMark) {
 	    this.mathMark = mathMark;
 	  }
-	     /*===========done=============*/
+	     
 	public int getitMark() {
 		    return itMark;
 		  }
@@ -41,7 +46,7 @@ public class Mark {
 	public void setitMark(int itMark) {
 		    this.itMark = itMark;
 		  }
-		  /*===========done=============*/ 
+		
 	public int getenglishMark() {
 			    return englishMark;
 			  }
@@ -50,6 +55,5 @@ public class Mark {
 			    this.englishMark = englishMark;
 			  }
 	
-			  /*===========done=============*/
 
 }

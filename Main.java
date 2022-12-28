@@ -25,15 +25,15 @@ public class Main {
 		School schoolObj = new School();
 		
 		System.out.println("\nPlease Enter School Name:");
-		schoolObj.setschoolName(scan.next());
+		//schoolObj.setschoolName(scan.next());
 		inputtStack.push(scan.next());
 		
 		System.out.println("Please Enter School Type:");
-		schoolObj.setschoolType(scan.next());
+		//schoolObj.setschoolType(scan.next());
 		inputtStack.push(scan.next());
 		
 		System.out.println("Please Enter School Address:");
-		schoolObj.setschoolAddress(scan.next());
+		//schoolObj.setschoolAddress(scan.next());
 		inputtStack.push(scan.next());
 				
 		Boolean deptFlag = true;              ////Condition of the 1st while loop(Department)
@@ -46,11 +46,11 @@ public class Main {
 		///////////////////////Loop for Department///////////////////////////////
 			Department depObj = new Department();
 			System.out.println("Please Enter Department Name:");
-			depObj.setdepartmentName(scan.next());
+			//depObj.setdepartmentName(scan.next());
 			inputtStack.push(scan.next());
 			
 			System.out.println("Please Enter Department Floor:");
-			depObj.setnoOfFloors(scan1.nextInt());
+			//depObj.setnoOfFloors(scan1.nextInt());
 			inputtStack.push(scan.next());
 			
 			
@@ -58,30 +58,30 @@ public class Main {
 		    ///////////////////////Loop for Teacher//////////////////////////////
 			Teacher teachobj = new Teacher();
 			System.out.println("Please Enter Teacher Name:");
-			teachobj.setteacherName(scan.next());
+			//teachobj.setteacherName(scan.next());
 			inputtStack.push(scan.next());
 			
 			System.out.println("Please Enter Teacher ID:");
-			teachobj.setteacherId(scan1.nextInt());
+			//teachobj.setteacherId(scan1.nextInt());
 			inputtStack.push(scan.next());
 			
 			System.out.println("Please Enter Teacher Email:");
-			teachobj.setteacherEmail(scan.next());
+			//teachobj.setteacherEmail(scan.next());
 			inputtStack.push(scan.next());
 			
 			while (studentFlag) { 
 			///////////////////////Loop for Student ///////////////////////////////
 			Student studobj = new Student ();
 			System.out.println("Please Enter Student Name:");
-			studobj.setstudentName(scan.next());
+			//studobj.setstudentName(scan.next());
 			inputtStack.push(scan.next());
 			
 			System.out.println("Please Enter Student ID:");
-			studobj.setstudentId(scan1.nextInt());
+			//studobj.setstudentId(scan1.nextInt());
 			inputtStack.push(scan.next());
 			
 			System.out.println("Please Enter Student Email:");
-			studobj.setstudentEmail(scan.next());
+			//studobj.setstudentEmail(scan.next());
 			inputtStack.push(scan.next());
 			
 
@@ -90,24 +90,24 @@ public class Main {
 			///////////////////////Loop for Course///////////////////////////////
 			Course courseobj = new Course ();
 			System.out.println("Please Enter Course ID:");
-			courseobj.setcourseId(scan1.nextInt());
+			//courseobj.setcourseId(scan1.nextInt());
 			inputtStack.push(scan.next());
 			
 			System.out.println("Please Enter Course Name:");
-			courseobj.setcourseName(scan.next());
+			//courseobj.setcourseName(scan.next());
 			inputtStack.push(scan.next());
 			
 			//Mark mark = new Mark(); 
 			System.out.println("Please Enter Mathematics Marks:");
-			courseobj.mark.setmathMark(scan1.nextInt());
+			//courseobj.mark.setmathMark(scan1.nextInt());
 			inputtStack.push(scan.next());
 			
 			System.out.println("Please Enter Information Technology Marks:");
-			courseobj.mark.setitMark(scan1.nextInt());
+			//courseobj.mark.setitMark(scan1.nextInt());
 			inputtStack.push(scan.next());
 			
 			System.out.println("Please Enter English Language Marks:");
-			courseobj.mark.setenglishMark(scan1.nextInt());
+			//courseobj.mark.setenglishMark(scan1.nextInt());
 			inputtStack.push(scan.next());
 			
 		

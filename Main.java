@@ -1,7 +1,11 @@
 package school;
 
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,11 +14,12 @@ import java.util.Stack;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
 		Scanner scan = new Scanner(System.in).useDelimiter("\n");
 		Scanner scan1 = new Scanner(System.in);
+		
 		
 		ArrayList<Department> depList = new ArrayList<>();
 		
@@ -152,7 +157,7 @@ public class Main {
 		System.out.println("\n⫸⫸⫸ School Address : " + schoolObj.getschoolAddress());
 
 		for (Department dep1 : depList ) {
-			System.out.println("\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣ Depatment Details ≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣");
+			System.out.println("\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣ Department Details ≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣");
 			System.out.println("\n⫸⫸⫸ Department Name : " + dep1.getdepartmentName());
 			System.out.println("\n⫸⫸⫸ Department Floor : " + dep1.getnoOfFloors());
 
@@ -174,7 +179,7 @@ public class Main {
 						System.out.println("\n⫸⫸⫸ Course Name : " + cors1.getcourseName());
 						System.out.println("\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣ Marks Details ≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣");
 						System.out.println("\n⫸⫸⫸ Mathimatic Marks : " + cors1.mark.getmathMark());
-						System.out.println("\n⫸⫸⫸ Infomation Technology Marks : " + cors1.mark.getitMark());
+						System.out.println("\n⫸⫸⫸ Information Technology Marks : " + cors1.mark.getitMark());
 						System.out.println("\n⫸⫸⫸ English Language Marks : " + cors1.mark.getenglishMark());
 						System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
 
@@ -186,24 +191,46 @@ public class Main {
 		}
 		
 		
-		for(String  stackoutput : inputtStack ) {
-			System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
-			System.out.println(stackoutput);
+		
 			
 			
-				File file = new File("C:\\Users\\Lenovo\\eclipse-workspace\\school\\main\\school\\testschool.txt");
+			try {
+				BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Lenovo\\eclipse-workspace\\school\\testschool.txt"));
+				writer.write("School Reports...");
 				
-				try {
-					FileWriter fw = new FileWriter(file);
-				  for (String x :inputtStack) {
-					  fw.write(x);	  
-				  }
-				  fw.close();
-				  
-				}catch (IOException e) {
-					e.printStackTrace();
-				}
+			for(String  stackoutput : inputtStack ) {
+				System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
+				System.out.println(stackoutput);
+				writer.write("\n" +stackoutput );
+				
 			}
+				writer.close();
+			
+			
+			} catch (IOException e) {
+			
+				e.printStackTrace();
+			}
+			
+			try {
+				BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Lenovo\\eclipse-workspace\\school\\testschool.txt"));
+				String line;
+				while (( line = reader.readLine()) != null)
+				
+				System.out.println(line);
+			
+			
+				reader.close();
+				
+			
+			} catch (FileNotFoundException e) {
+				
+				e.printStackTrace();
+		}
+				
+	
 	}
+	
 }
+
 
